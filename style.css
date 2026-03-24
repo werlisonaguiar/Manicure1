@@ -45,6 +45,7 @@ body {
 
 .btn:hover {
   transform: scale(1.05);
+  background-color: #6d2c4f;
 }
 
 .btn.destaque {
@@ -71,13 +72,14 @@ body {
   padding: 20px;
   border-radius: 15px;
   width: 220px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(181, 96, 150, 0.1);
   transition: 0.3s;
   animation: fadeUp 1s ease;
 }
 
 .card:hover {
   transform: translateY(-5px);
+  background-color: #cf8dae85;
 }
 
 .card span {
@@ -119,6 +121,7 @@ body {
 
 .item:hover {
   transform: scale(1.08);
+  
 }
 
 /* AÇÕES */
@@ -191,3 +194,30 @@ footer {
     height: 240px;
   }
 }
+.horario {
+    padding: 40px 20px;
+    text-align: center;
+    background: #fff0f5;
+}
+
+.horario h2 {
+    margin-bottom: 20px;
+}
+
+.horario-box {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 300px;
+    margin: auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.horario-box p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+ .horario :hover{
+     transform: scale(1.08);
+     background-color: #fdc4d7c3;
+ }
