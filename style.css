@@ -50,7 +50,7 @@ body {
 
 .btn.destaque {
   background: #25d366;
-  color: white;
+  color: rgb(50, 35, 35);
 }
 
 /* PREÇOS */
@@ -156,6 +156,7 @@ footer {
 
 .whatsapp-float:hover {
   transform: scale(1.1);
+  background-color: #196937;
 }
 
 /* ANIMAÇÃO */
