@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff0f5;
+}
+
+/* HERO */
+.hero {
+  background:
+    linear-gradient(rgba(255, 20, 147, 0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1612887390768-fb02affea7a6?w=1200');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  padding: 100px 20px;
+  animation: fadeUp 1s ease;
+}
+
+.hero h1 {
+  font-size: 40px;
+}
+
+.hero p {
+  margin-top: 10px;
+}
+
+/* BOTÕES */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: white;
+  color: #ff1493;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn.destaque {
+  background: #25d366;
+  color: white;
+}
+
+/* PREÇOS */
+.precos {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 220px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  animation: fadeUp 1s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card span {
+  display: block;
+  color: #ff1493;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+/* GALERIA ESTILO NETFLIX */
+.galeria {
+  padding: 40px 20px;
+}
+
+.scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px;
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.item {
+  min-width: 260px;
+  flex-shrink: 0;
+  transition: 0.3s;
+  animation: fadeUp 1s ease;
+}
+
+.item img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.item:hover {
+  transform: scale(1.08);
+}
+
+/* AÇÕES */
+.acoes {
+  text-align: center;
+  padding: 40px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #ff1493;
+  color: white;
+}
+
+/* BOTÃO FLUTUANTE */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: white;
+  font-size: 24px;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  z-index: 999;
+  transition: 0.3s;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+/* ANIMAÇÃO */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .item {
+    min-width: 180px;
+  }
+
+  .item img {
+    height: 240px;
+  }
+}
